@@ -1,5 +1,6 @@
 import { Tabs, TabList, TabPanels, Tab, TabPanel } from '@chakra-ui/react';
 import { Video } from './video.js';
+import { Landing } from './landing.js';
 
 export function NavBar() {
 	return (
@@ -14,6 +15,7 @@ export function NavBar() {
             </TabList>
             <TabPanels>
                 <TabPanel>
+                    <Landing></Landing>
                     <p>Landing Page</p>
                 </TabPanel>
                 <TabPanel>
