@@ -1,6 +1,7 @@
 import { Tabs, TabList, TabPanels, Tab, TabPanel } from '@chakra-ui/react';
 import { Video } from './video.js';
 import { Landing } from './landing.js';
+import { Wins } from './wins.js';
 
 export function NavBar() {
 	return (
@@ -21,7 +22,7 @@ export function NavBar() {
                     <p>Role Models go here</p>
                 </TabPanel>
                 <TabPanel>
-                    <p>Wins go here</p>
+                    <Wins></Wins>
                 </TabPanel>
                 <TabPanel>
                     <Video></Video>
