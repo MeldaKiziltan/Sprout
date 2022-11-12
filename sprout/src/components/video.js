@@ -1,11 +1,9 @@
-import { Center } from "@chakra-ui/react";
-
 export function Video() {
     return (
         <center>
             <iframe 
-                width="1200" 
-                height="630" 
+                width="1065" 
+                height="600" 
                 src="https://www.youtube.com/embed/9WY38rjIJuA" 
                 title="YouTube video player" 
                 frameborder="0" 
