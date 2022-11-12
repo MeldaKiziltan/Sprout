@@ -16,7 +16,6 @@ export function NavBar() {
             <TabPanels>
                 <TabPanel>
                     <Landing></Landing>
-                    <p>Landing Page</p>
                 </TabPanel>
                 <TabPanel>
                     <p>Role Models go here</p>
