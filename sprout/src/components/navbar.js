@@ -22,6 +22,7 @@ export function NavBar() {
                     <p>Role Models go here</p>
                 </TabPanel>
                 <TabPanel>
+                    <div className='Page-header'>Wins - Remind yourself of your accomplishments!</div>
                     <Wins></Wins>
                 </TabPanel>
                 <TabPanel>
