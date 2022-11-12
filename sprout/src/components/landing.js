@@ -1,58 +1,61 @@
 import { Box } from '@chakra-ui/react';
 import { Image } from '@chakra-ui/react';
+import { LandingWidget } from './landingwidget.js';
+import { Grid, GridItem } from '@chakra-ui/react';
+
 export function Landing() {
-	const property = {
-		imageUrl: 'https://bit.ly/2Z4KKcF',
-		imageAlt: 'Rear view of modern home with pool',
-		beds: 3,
-		baths: 2,
-		title: 'Modern home in city center in the heart of historic Los Angeles',
-		formattedPrice: '$1,900.00',
-		reviewCount: 34,
-		rating: 4,
-	  }
+
+	return(
+	<Grid
+	templateAreas={`"header header"
+					"nav main"
+					"nav footer"`}
+	gridTemplateRows={'50px 1fr 300px'}
+	gridTemplateColumns={'270px 1fr'}
+	h='600px'
+	gap='1'
+	color='blackAlpha.700'
+	fontWeight='bold'
+	>
+	<GridItem pl='2'  area={'header'}>
+		Welcome to Sprout! 
+	</GridItem>
+	<GridItem pl='2' area={'nav'}>
+		<LandingWidget></LandingWidget> 
+	</GridItem>
+	<GridItem pl='2' bg='green.300' area={'main'}>
+		Main
+	</GridItem>
+	<GridItem pl='2' bg='blue.300' area={'footer'}>
+		Footer
+	</GridItem>
+	</Grid>
+);
+
+{/* <Grid
+  templateAreas={`"header header"
+                  "nav main"
+                  "nav footer"`}
+  gridTemplateRows={'50px 1fr 30px'}
+  gridTemplateColumns={'150px 1fr'}
+  h='200px'
+  gap='1'
+  color='blackAlpha.700'
+  fontWeight='bold'
+>
+  <GridItem pl='2' bg='orange.300' area={'header'}>
+  <roleModelWidget></roleModelWidget>
+    changes
+  </GridItem>
+  <GridItem pl='2' bg='pink.300' area={'nav'}>
 	
-	  return (
-		<Box maxW='sm' borderWidth='1px' borderRadius='lg' overflow='hidden'>
-		  <Image src={property.imageUrl} alt={property.imageAlt} />
-	
-		  <Box p='6'>
-			<Box display='flex' alignItems='baseline'>
-			  <Box
-				color='gray.500'
-				fontWeight='semibold'
-				letterSpacing='wide'
-				fontSize='xs'
-				textTransform='uppercase'
-				ml='2'
-			  >
-				{property.beds} beds &bull; {property.baths} baths
-			  </Box>
-			</Box>
-	
-			<Box
-			  mt='1'
-			  fontWeight='semibold'
-			  as='h4'
-			  lineHeight='tight'
-			  noOfLines={1}
-			>
-			  {property.title}
-			</Box>
-	
-			<Box>
-			  {property.formattedPrice}
-			  <Box as='span' color='gray.600' fontSize='sm'>
-				/ wk
-			  </Box>
-			</Box>
-	
-			<Box display='flex' mt='2' alignItems='center'>
-			  <Box as='span' ml='2' color='gray.600' fontSize='sm'>
-				{property.reviewCount} reviews
-			  </Box>
-			</Box>
-		  </Box>
-		</Box>
-	  )
+    Nav
+  </GridItem>
+  <GridItem pl='2' bg='green.300' area={'main'}>
+    Main
+  </GridItem>
+  <GridItem pl='2' bg='blue.300' area={'footer'}>
+    Footer
+  </GridItem>
+</Grid>) */}
 }
