@@ -24,7 +24,7 @@ export function NavBar() {
                 <TabPanel>
                     <p>Wins go here</p>
                 </TabPanel>
-                <TabPanel textAlign='center'>
+                <TabPanel>
                     <Video></Video>
                 </TabPanel>
                 <TabPanel>
