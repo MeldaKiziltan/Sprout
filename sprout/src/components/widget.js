@@ -1,6 +1,6 @@
 import { Box } from '@chakra-ui/react';
 import { Image } from '@chakra-ui/react';
-import logo from './melda.png';
+import logo from './RoleModelAssets/melda.png';
 export function Widget() {
 	const property = {
 		imageAlt: 'melda',

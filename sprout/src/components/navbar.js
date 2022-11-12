@@ -1,7 +1,9 @@
-import { Tabs, TabList, TabPanels, Tab, TabPanel } from '@chakra-ui/react';
+import { Tabs, TabList, TabPanels, Tab, TabPanel, Center } from '@chakra-ui/react';
 import { Video } from './video.js';
 import { Landing } from './landing.js';
 import { Wins } from './wins.js';
+import { RoleModel } from './rolemodel.js';
+import discussion from './Discussion.png'
 
 export function NavBar() {
 	return (
@@ -19,7 +21,8 @@ export function NavBar() {
                     <Landing></Landing>
                 </TabPanel>
                 <TabPanel>
-                    <p>Role Models go here</p>
+                    <div className='Page-header'>Past Role Models of the day. STEMimists, if you will</div>
+                    <RoleModel></RoleModel>
                 </TabPanel>
                 <TabPanel>
                     <div className='Page-header'>Wins - Remind yourself of your accomplishments!</div>
@@ -29,10 +32,12 @@ export function NavBar() {
                     <Video></Video>
                 </TabPanel>
                 <TabPanel>
-                    <p>Blah Blah Blah</p>
+                    <Center>
+                        <img src={discussion} width='1200px'/>
+                    </Center>
                 </TabPanel>
                 <TabPanel>
-                    <p>Write write</p>
+                    <p> Write</p>
                 </TabPanel>
             </TabPanels>
         </Tabs>
