@@ -1,5 +1,5 @@
 import { Tabs, TabList, TabPanels, Tab, TabPanel } from '@chakra-ui/react';
-import React from 'react';
+import { Video } from './video.js';
 
 export function NavBar() {
 	return (
@@ -22,8 +22,8 @@ export function NavBar() {
                 <TabPanel>
                     <p>Wins go here</p>
                 </TabPanel>
-                <TabPanel>
-                    <p>Meditation goes here</p>
+                <TabPanel textAlign='center'>
+                    <Video></Video>
                 </TabPanel>
                 <TabPanel>
                     <p>Blah Blah Blah</p>
